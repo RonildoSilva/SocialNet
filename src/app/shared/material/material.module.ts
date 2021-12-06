@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 
-const modules : any[] = [
+const modules : MatCardModule[] = [
   MatCardModule
 ];
 
@@ -10,10 +10,10 @@ const modules : any[] = [
   declarations: [],
   imports: [
     CommonModule,
-    ...modules
+    modules
   ],
   exports: [
-    ...modules
+    modules
   ]
 })
 export class MaterialModule { }
